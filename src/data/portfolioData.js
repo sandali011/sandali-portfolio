@@ -77,7 +77,7 @@ export const skillCategories = [
   {
     label: 'Languages & Mobile',
     color: 'cyan',
-    skills: ['JavaScript', 'Python', 'Flutter', 'HTML5', 'CSS3'], // Dart අයින් කර Flutter පමණක් තැබුවා
+    skills: ['JavaScript', 'Python', 'Flutter', 'HTML5', 'CSS3'],
   },
   {
     label: 'Frontend',
@@ -95,9 +95,9 @@ export const skillCategories = [
     skills: ['PostgreSQL', 'MongoDB'],
   },
   {
-    label: 'DevOps & Tools',
+    label: 'Tools & Deployment',
     color: 'orange',
-    skills: ['Docker', 'Git', 'GitHub', 'Postman', 'Vercel', 'VS Code'],
+    skills: ['Docker', 'Git', 'GitHub', 'GitHub Actions', 'Postman', 'Vercel', 'VS Code'],
   },
   {
     label: 'Architecture & Concepts',
