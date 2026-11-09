@@ -5,7 +5,7 @@ const highlights = [
   {
     icon: FiCode,
     title: 'Frontend',
-    desc: 'Building responsive, accessible UIs with React 19, JavaScript & Tailwind CSS',
+    desc: 'Building responsive, interactive UIs with React & Tailwind CSS',
     color: 'text-cyan-400',
     bg: 'from-cyan-500/15 to-cyan-500/5',
     border: 'hover:border-cyan-400/25',
@@ -13,23 +13,23 @@ const highlights = [
   {
     icon: FiServer,
     title: 'Backend',
-    desc: 'Developing RESTful APIs with Python & FastAPI, expanding into Node.js',
+    desc: 'Developing REST APIs with Python & FastAPI, expanding into Node.js',
     color: 'text-purple-400',
     bg: 'from-purple-500/15 to-purple-500/5',
     border: 'hover:border-purple-400/25',
   },
   {
     icon: FiCloud,
-    title: 'Deployment & Tools',
-    desc: 'Working with Docker containers, Git workflows, Vercel & CI/CD basics',
+    title: 'Tools & Deploy',
+    desc: 'Working with Git, Docker basics, Vercel & CI/CD workflows',
     color: 'text-blue-400',
     bg: 'from-blue-500/15 to-blue-500/5',
     border: 'hover:border-blue-400/25',
   },
   {
     icon: FiZap,
-    title: 'Continuous Learning',
-    desc: 'Currently mastering Node.js, Express, Full-Stack Open & cloud concepts',
+    title: 'Learning',
+    desc: 'Actively mastering Node.js, Express, cloud deployment & microservices',
     color: 'text-emerald-400',
     bg: 'from-emerald-500/15 to-emerald-500/5',
     border: 'hover:border-emerald-400/25',
@@ -50,9 +50,11 @@ function fadeUp(delay = 0) {
 export default function About() {
   return (
     <section id="about" className="py-24 relative">
+      {/* Subtle radial background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_100%,rgba(168,85,247,0.05),transparent)]" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
         <motion.div {...fadeUp()} className="text-center mb-16">
           <p className="text-cyan-400 text-xs font-semibold tracking-[0.2em] uppercase mb-3">
             About Me
@@ -70,18 +72,20 @@ export default function About() {
               <span className="text-purple-300 font-semibold">
                 Institute of Technology, University of Moratuwa (ITUM)
               </span>
-              , specializing in building clean, user-centric full-stack web and mobile applications.
+              , passionate about building full-stack web applications and exploring the world of
+              cloud computing.
             </motion.p>
 
             <motion.p {...fadeUp(0.1)} className="text-gray-300 text-base leading-relaxed">
-              I focus on building reliable applications — from smooth React frontends to robust
-              REST APIs with Python &amp; FastAPI, supported by PostgreSQL and Docker. I am passionate
-              about clean code, modern UI design, and learning cutting-edge technologies.
+              I enjoy building complete, production-ready applications — from pixel-perfect React
+              frontends to scalable backends with Node.js and Python. I'm constantly deepening my
+              expertise in containerization with Docker, REST APIs, and modern web deployment.
             </motion.p>
 
             <motion.p {...fadeUp(0.15)} className="text-gray-300 text-base leading-relaxed">
-              When I'm not coding, I'm working through global technical coursework like University
-              of Helsinki's Full Stack Open and preparing for a high-impact Software Engineering internship.
+              When I'm not coding, I'm exploring new technologies, sharpening my algorithms, and
+              working toward becoming a well-rounded full-stack & cloud engineer ready for the
+              industry.
             </motion.p>
 
             {/* Trait badges */}
@@ -103,7 +107,7 @@ export default function About() {
             >
               {[
                 { label: 'Projects', value: '3+' },
-                { label: 'Tech Stack', value: '12+' },
+                { label: 'Tech Stack', value: '15+' },
                 { label: 'Focus', value: 'Full-Stack' },
               ].map(({ label, value }) => (
                 <div

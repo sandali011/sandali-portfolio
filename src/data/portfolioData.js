@@ -77,7 +77,7 @@ export const skillCategories = [
   {
     label: 'Languages & Mobile',
     color: 'cyan',
-    skills: ['JavaScript', 'Python', 'Flutter', 'HTML5', 'CSS3'],
+    skills: ['JavaScript', 'Python', 'Flutter', 'HTML5', 'CSS3'], // Dart අයින් කර Flutter පමණක් තැබුවා
   },
   {
     label: 'Frontend',
